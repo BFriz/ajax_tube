@@ -1,3 +1,6 @@
+(document).ready(function(){
+
+
 function getVideos(){
   //Ajax request to retrive all the items from the database
   $.ajax({
@@ -10,3 +13,15 @@ function getVideos(){
     })
   }
 }
+
+function uploadVideo(){
+  $.ajax({
+    type: 'POST',
+    url: '/items',
+    dataType: 'json', 
+  }).done(function(data){
+
+  })
+}
+
+})
