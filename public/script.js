@@ -1,3 +1,5 @@
+// console.log("hope")
+
 function getVideos(){
   console.log('hope')
   //Ajax request to retrive all the items from the database
@@ -13,10 +15,13 @@ function getVideos(){
     })
   })
 }
- function uploadVideo(){
+$(document).ready(function(){
+  // addNew();
+  $('#stat').on('click', function(){
+   console.log(this)
+  })
   
-console.log('help')
- }
+})
 
 //   var addNew = $('#stat')
 
@@ -34,7 +39,7 @@ console.log('help')
 //   })
 
 
-// Define Variables
-var uploadVid = $('#stat');
-// //create event listener's
-uploadVid.on('click', uploadVideo);
+// // Define Variables
+// var uploadVid = $('#stat');
+// // //create event listener's
+// uploadVid.on('click', uploadVideo);
